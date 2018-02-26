@@ -3,8 +3,6 @@ class TesteView{
      static apagaAtual(){
          let containerTeste = $(".teste-changes");
          containerTeste.innerHTML = "";
-
-         this.constroiNovo(numPergunta);
      }
 
      static constroiNovo(numPergunta){
@@ -18,8 +16,6 @@ class TesteView{
                  <li class="pergunta-3">Maçã</li>
              </ul>
              `;
-
-
          }
 
          if(numPergunta == 1){
@@ -31,7 +27,6 @@ class TesteView{
                  <li class="pergunta-3">Melancia</li>
              </ul>
              `;
-
          }
 
          if(numPergunta == 2){
@@ -54,16 +49,13 @@ class TesteView{
                  <li class="pergunta-3">Jaboticaba</li>
              </ul>
              `;
-
          }
 
          if(numPergunta == 4){
              Resultado.calcula();
          }
-
+         
          atribuiEvento();
-
-
      }
 }
 
@@ -73,18 +65,21 @@ class ResultadoView{
         if(resultadoFinal == 0){
             containerTeste.innerHTML = `
             <h3>Voce é muito a primeira opção</h3>
+            <a href="http://google.com.br?id=1">Exemplo</a>
             `;
         }
 
         if(resultadoFinal == 1){
             containerTeste.innerHTML = `
             <h3>Voce é muito a segunda opção</h3>
+            <a href="http://google.com.br?id=2">Exemplo</a>
             `;
         }
 
         if(resultadoFinal == 2){
             containerTeste.innerHTML = `
             <h3>Voce é muito a terceira opção</h3>
+            <a href="http://google.com.br?id=3">Exemplo</a>
             `;
         }
     }

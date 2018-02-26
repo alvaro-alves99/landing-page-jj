@@ -13,9 +13,8 @@ class TesteController{
 
         resultado.push(escolha);
         TesteView.apagaAtual();
+        TesteView.constroiNovo(numPergunta);
         numPergunta++;
         console.log(numPergunta);
     }
-
-
 }
