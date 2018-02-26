@@ -1,0 +1,36 @@
+
+body{
+    font-family:sans-serif;
+}
+
+.principal{
+    position:absolute;
+    left:50%;
+    transform:translatex(-50%);
+    max-width: 1000px;
+}
+
+.teste-inner h3{
+    font-size:2em;
+    margin-bottom:.5em;
+}
+
+.ul-perguntas li:not(:last-child){
+    margin-bottom:10px;
+}
+.ul-perguntas{
+    margin-bottom:20px;
+}
+
+.ul-perguntas li{
+    font-size: 1.5em;
+    padding:10px;
+    border:1px solid black;
+    cursor:pointer;
+    transition:.5s;
+}
+
+.ul-perguntas li:hover{
+    background-color:tomato;
+    color:white;
+}
