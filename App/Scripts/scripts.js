@@ -1,11 +1,15 @@
-//ATRIBUINDO EVENTOS AOS ELEMENTOS DO DOM
-var opcao1 = $(".pergunta-1");
-var opcao2 = $(".pergunta-2");
-var opcao3 = $(".pergunta-3");
+//ATRIBUINDO EVENTOS AOS LI's (QUE SERAO AS OPCOES DO TESTE)
 
-opcao1.addEventListener("click", function(){
-    let opcao = new TesteController(1);
-    console.log(opcao);
+function atribuiEvento(){
+
+var opcoes = document.querySelectorAll(".ul-perguntas li");
+
+opcoes.forEach((escolha, i) =>{
+    escolha.addEventListener("click", function(){
+        let opcao = new TesteController(i);
+    });
 });
-opcao2.addEventListener("click", function(){alert(2)});
-opcao3.addEventListener("click", function(){alert(3)});
+
+}
+
+atribuiEvento();
