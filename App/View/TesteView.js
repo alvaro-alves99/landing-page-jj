@@ -1,3 +1,5 @@
+//ESSA CLASSE APAGA O CONTEUDO DA DIV COM CLASSE "teste-changes" E ESCREVE NOVAS PERGUNTAS E OPCOES
+
 class TesteView{
 
      static apagaAtual(){
@@ -54,10 +56,12 @@ class TesteView{
          if(numPergunta == 4){
              Resultado.calcula();
          }
-         
+
          atribuiEvento();
      }
 }
+
+//ESSA CLASSE MOSTRA O RESULTADO DE ACORDO COM O VALOR DE resultadoFinal, QUE É DEFINIDO NA CLASSE Resultado(Model)
 
 class ResultadoView{
     static monta(resultadoFinal){

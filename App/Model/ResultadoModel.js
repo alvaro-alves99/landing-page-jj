@@ -1,3 +1,5 @@
+//ESSA CLASSE CALCULA O RESULTADO, DEFININDO A VAR resultadoFinal
+
 class Resultado{
     static calcula(){
         let resultado0 = resultado.filter(function(n){
