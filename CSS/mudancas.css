@@ -1,0 +1,65 @@
+/*PRIMEIRA PERGUNTA*/
+
+.li--imagem1--primeira{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/cor-roxa.jpg);
+    background-position:80px !important;
+    background-size:175px !important;
+}
+
+.li--imagem2--primeira{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/cor-preta.jpg);
+    background-position:80px !important;
+    background-size:175px !important;
+}
+
+.li--imagem3--primeira{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/cor-rosa.jpg);
+    background-position:80px !important;
+    background-size:175px !important;
+}
+
+
+.li--imagem1--segunda{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/new-york-option.jpg);
+}
+
+.li--imagem2--segunda{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/paris-option.jpg);
+}
+
+.li--imagem3--segunda{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/london-option.jpg);
+}
+
+.li--imagem1--terceira{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/delineador-option.jpg);
+}
+
+.li--imagem2--terceira{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/batom-option.jpg);
+}
+
+.li--imagem3--terceira{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/rimel-option.jpg);
+}
+
+.li--imagem1--quarta{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/show-option.jpg);
+}
+
+.li--imagem2--quarta{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/cinema-option.jpg);
+}
+
+.li--imagem3--quarta{
+    background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/balada-option.jpg);
+}
+
+.li--transition{
+    filter:grayscale(1);
+    transition:.5s;
+}
+
+.li--transition:hover{
+    filter:grayscale(0);
+}
