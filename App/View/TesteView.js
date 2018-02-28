@@ -4,11 +4,16 @@ class TesteView{
 
      static apagaAtual(){
          let containerTeste = $(".teste-changes");
-         containerTeste.innerHTML = "";
+         containerTeste.classList.add("--opacity0");
+         setTimeout(function(){
+             containerTeste.innerHTML = "";
+         }, 1000)
+
      }
 
      static constroiNovo(numPergunta){
          let containerTeste = $(".teste-changes");
+         containerTeste.classList.remove("--opacity0");
          if(numPergunta == 0){
              containerTeste.innerHTML = `
              <h3><span>2</span><br>Pra Onde seria a sua viagem dos sonhos?</h3>

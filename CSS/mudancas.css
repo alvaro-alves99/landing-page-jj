@@ -63,3 +63,7 @@
 .li--transition:hover{
     filter:grayscale(0);
 }
+
+.--opacity0{
+    opacity:0 !important;
+}
