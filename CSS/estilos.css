@@ -19,6 +19,12 @@
     src: url(http://homolog.tfs.com.br/wp-content/uploads/2018/03/BeautyDemo.ttf);
 }
 
+
+@font-face{
+    font-family: "journal";
+    src: url(http://homolog.tfs.com.br/wp-content/uploads/2018/03/JOURNAL.ttf);
+}
+
 body{
     font-family: 'gotham light', sans-serif;
     background-color:#000000;
