@@ -299,7 +299,8 @@ figure{
 }
 
 .batom-figure figcaption{
-    top: -9%;
+    top: -4%;
+    left: 3%;
 }
 
 .blush-figure{
@@ -311,9 +312,9 @@ figure{
 
 .blush-figure img{
     position: absolute;
-    top: 28%;
-    width: 100%;
-    left: 33%;
+    top: 18%;
+    width: 125%;
+    left: 19%;
 }
 
 figcaption h4{
@@ -325,6 +326,21 @@ figcaption h4{
 figcaption{
     font-family:"gotham thin";
     font-size:80%;
+}
+
+figcaption a{
+    text-decoration:none;
+    display:inline-block;
+    background-color:#db718a;
+    color:black;
+    padding:5px;
+    text-transform:uppercase;
+    font-family:"gotham bold";
+    margin-top:15px;
+}
+
+input:focus{
+    outline-color: #db718a;
 }
 
 .blush-figure figcaption{
@@ -340,5 +356,6 @@ figcaption{
 .produtos__redes{
     display:flex;
     margin-top:10px;
+    margin-bottom:50px;
     justify-content: space-around;
 }
