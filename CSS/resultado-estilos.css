@@ -5,10 +5,48 @@ p{
 
 .resultado__texto{
     color:black;
-    padding:20px;
+    padding:38px;
+    padding-top:33px;
     position:relative;
-    height:226px;
+    height:252px;
     margin-bottom: 56px;
+}
+
+.texto h1{
+    font-size:2.1em;
+    text-transform:uppercase;
+    margin-bottom:13%;
+    font-family: "gotham bold";
+    font-weight:bolder;
+    position:relative;
+    color:black;
+    display:inline-block;
+    text-align: left;
+    transform: translate(55px);
+}
+
+.texto h1::before{
+    content: "";
+    width: 98%;
+    height: 69%;
+    position: absolute;
+    transform: rotate(3deg);
+    top: -1px;
+    left: -9px;
+    background-color: white;
+    z-index: -3;
+}
+
+.texto h1::after{
+    content: "";
+    width: 108%;
+    height: 61%;
+    position: absolute;
+    transform: rotate(-1deg);
+    top: 40px;
+    left: 33px;
+    background-color: #da728a;
+    z-index: -4;
 }
 
 .resultado__texto::after{
@@ -37,8 +75,8 @@ p{
 }
 
 .resultado__texto p{
-    font-size:1.13em;
-    font-family: 'Questrial', sans-serif;
+    font-size:1.1em;
+    font-family: 'gotham light', sans-serif;
     line-height:1.2;
 
 }
@@ -53,6 +91,7 @@ p{
     position:relative;
     top:10%;
     left:10%;
+    z-index:-1;
 }
 
 .resultado h1{
@@ -67,11 +106,11 @@ p{
     left:50%;
 }
 
-.form{
+.form-section{
     text-align: center;
 }
 
-.form h2{
+.form-section h2{
     font-size:2.2em;
     position:relative;
     text-transform:uppercase;
@@ -84,15 +123,15 @@ p{
     font-weight:bolder;
 }
 
-.form p{
+.form-section p{
     width:80%;
     line-height:1.2;
     margin:0 auto;
     font-weight:100;
-    text-align:left;
+    text-align:justify;
 }
 
-.form h2::after{
+.form-section h2::after{
     content: "";
     position: absolute;
     top: -1%;
@@ -104,4 +143,73 @@ p{
     background-color: #da728a;
     z-index: -1;
 
+}
+
+.form{
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    height:270px;
+    width: 80%;
+    background-color:white;
+    position:relative;
+}
+
+.form::before{
+    content:"";
+    background-color:#da728a;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    transform:rotate(-9deg);
+}
+
+input[type="text"]{
+    width:80%;
+    height:30px;
+    display:block;
+    margin:0 auto;
+    border:1px solid black;
+    font-size:1.1em;
+    padding:5px;
+    box-sizing:border-box;
+}
+
+input[type="email"]{
+    width:80%;
+    height:30px;
+    display:block;
+    margin:0 auto;
+    border:1px solid black;
+    font-size:1.1em;
+    padding:5px;
+    box-sizing:border-box;
+}
+
+input[type="submit"]{
+    margin-top:30px;
+    border-color:#da728a;
+    height:40px;
+    width:60%;
+    background-color:#da728a;
+    color:white;
+    text-transform:uppercase;
+    font-size:1em;
+}
+
+label{
+    color:black;
+    text-transform:uppercase;
+    display:inline-block;
+    margin-top:20px;
+    margin-bottom:5px;
+}
+
+.form p{
+    margin-top:7px;
+    color:black;
+    font-size:.65em;
 }

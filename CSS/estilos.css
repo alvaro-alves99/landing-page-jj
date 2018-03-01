@@ -1,9 +1,30 @@
+@font-face{
+    font-family: "gotham bold";
+    src: url(http://homolog.tfs.com.br/wp-content/uploads/2018/03/GOTHAM-BOLD.ttf);
+}
+
+@font-face{
+    font-family: "gotham thin";
+    src: url(http://homolog.tfs.com.br/wp-content/uploads/2018/03/GOTHAM-THIN.ttf);
+}
+
+@font-face{
+    font-family: "gotham light";
+    src: url(http://homolog.tfs.com.br/wp-content/uploads/2018/03/GOTHAM-LIGHT.ttf);
+}
+
+
+@font-face{
+    font-family: "beauty";
+    src: url(http://homolog.tfs.com.br/wp-content/uploads/2018/03/BeautyDemo.ttf);
+}
+
 body{
-    font-family: 'Questrial', sans-serif;
+    font-family: 'gotham light', sans-serif;
     background-color:#000000;
     color:white;
     padding-bottom:1100px;
-    max-width:500px;
+    max-width:450px;
     margin: 0 auto;
 }
 
@@ -60,25 +81,25 @@ body{
 }
 
 .texto__inner h1{
-    font-size:2.1em;
+    font-size:1.9em;
     text-transform:uppercase;
     margin-bottom:13%;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'gotham bold', sans-serif;
     font-weight:bolder;
     position:relative;
     color:black;
     display:inline-block;
     text-align: left;
-    transform: translate(-21px);
+    transform: translate(-9px);
 }
 
 .texto__inner h1::before{
     content: "";
     width: 98%;
-    height: 69%;
+    height: 61%;
     position: absolute;
     transform: rotate(3deg);
-    top: -1px;
+    top: 7px;
     left: -9px;
     background-color: white;
     z-index: -3;
@@ -87,25 +108,29 @@ body{
 
 .texto__inner h1::after{
     content: "";
-    width: 108%;
-    height: 61%;
+    width: 106%;
+    height: 53%;
     position: absolute;
     transform: rotate(-1deg);
-    top: 40px;
-    left: 33px;
+    top: 55px;
+    left: 4px;
     background-color: #da728a;
     z-index: -3;
 }
 
 .texto__inner span{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'beauty', cursive;
     text-transform:none;
-    font-size: 1.4em;
+    font-size: 2em;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    top: 15px;
 }
 
 .texto__inner h1 strong{
     display:inline-block;
-    transform:translate(46px, 2px);
+    transform:translate(13px, -1px);
 }
 
 .texto__inner p{
@@ -115,16 +140,16 @@ body{
     text-align:justify;
     margin:0 auto;
     font-weight:100;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'gotham light', sans-serif;
 }
 
 .texto__inner h2{
     text-align:center;
     font-size:1.3em;
-    margin-top:8%;
+    margin-top:12%;
     line-height:1.21;
     text-transform:uppercase;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'gotham bold', sans-serif;
 }
 
 .teste-container{
@@ -179,7 +204,6 @@ body{
 }
 
 .ul-perguntas li{
-    font-size: 1.5em;
     height:82px;
     padding:10px;
     cursor:pointer;
@@ -193,6 +217,7 @@ body{
     color:white;
     font-weight: bolder;
     font-size: 2.1em;
+    font-family:"gotham bold";
 }
 
 .botao-teste{
