@@ -14,10 +14,11 @@ p{
 .resultado__texto::after{
     content: "";
     position: absolute;
-    top: -13%;
+    top: -12%;
     left: 9%;
     width: 78%;
-    height: 120%;
+    transform: rotate(-9deg) skew(-9deg, 1deg) translate(14px, 0px);
+    height: 117%;
     background-color: #da728a;
     z-index: -2;
 }
