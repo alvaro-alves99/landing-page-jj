@@ -11,6 +11,14 @@
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     </head>
     <body>
+        <?php
+            if($_GET){
+            $resultado = $_GET["resultado"];
+
+        }
+
+
+         ?>
         <section class="header">
             <div class="header__inner">
                 <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/logo-joli-joli.png" alt="Logo de Joli Joli">
@@ -20,11 +28,15 @@
         <main class="principal">
 
             <section class="texto">
+
+                <?php if($resultado == 3): ?>
+
                 <div class="resultado">
                     <h1>Resultado<br>Seu <span>Estilo</span> &nbsp;é</h1>
-                    <img class="modelo-img" src="http://www.jolijoli.com.br/wp-content/uploads/2018/02/resultado-romantica.png" alt="">
+                    <img class="modelo-img img-romantica" src="http://www.jolijoli.com.br/wp-content/uploads/2018/02/resultado-romantica.png" alt="">
                 <div class="titulo-img-container">
-                    <img class="titulo-img" src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/romantica.png" alt="Romantica escrito">
+                    <img class="titulo-img" src="
+http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" alt="Romantica escrito">
                 </div>
                     <div class="resultado__texto">
                         <p>Aposto que você é sonhadora, extremamente alegre e engraçada.
@@ -32,6 +44,38 @@
                         Tem dias que o menos é mais, e tudo bem ser assim, porque nada é mais incrível do que destacar sua beleza natural. </p>
                     </div>
                 </div>
+
+            <?php endif; ?>
+
+            <?php if($resultado == 1): ?>
+
+                <div class="resultado">
+                    <h1>Resultado<br>Seu <span>Estilo</span> &nbsp;é</h1>
+                    <img class="modelo-img img-ousada" src="http://www.jolijoli.com.br/wp-content/uploads/2018/02/resultado-ousada.png" alt="">
+                <div class="titulo-img-container">
+                    <img class="titulo-img titulo-ousada" src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/ousada-resultado.png" alt="Romantica escrito">
+                </div>
+                    <div class="resultado__texto resultado-ousada">
+                        <p>Você não gosta de nada que é comum, e muito menos estar igual aos outros. Criar é a sua palavra chave! Você sabe como ninguém um batom vivo junto com sombra beeem intensa. Use esse dom para arrasar! Ouse, abuse e saia ainda mais da sua zona de conforto ;)</p>
+                    </div>
+                </div>
+
+            <?php endif; ?>
+
+            <?php if($resultado == 2): ?>
+
+                <div class="resultado">
+                    <h1>Resultado<br>Seu <span>Estilo</span> &nbsp;é</h1>
+                    <img class="modelo-img img-estilosa" src="http://www.jolijoli.com.br/wp-content/uploads/2018/02/resultado-estilosa.png" alt="">
+                <div class="titulo-img-container">
+                    <img class="titulo-img titulo-estilosa" src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/estilosa-resultado.png" alt="Romantica escrito">
+                </div>
+                    <div class="resultado__texto resultado-estilosa">
+                        <p>Ligada nas tendências, você gosta de estar sempre atenta ao que está na moda. Mas sabe que não precisa ser refém das passarelas, cria e recria a moda da forma que bem entende. Pra você algumas coisas são leis, como o clássico batom vermelho, que não sai da sua bolsa :P</p>
+                    </div>
+                </div>
+
+            <?php endif; ?>
 
             </section>
 

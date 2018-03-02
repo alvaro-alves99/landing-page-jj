@@ -262,20 +262,8 @@ label{
 .titulo-img{
     position: absolute;
     z-index: 2;
-    top: 45%;
-    left: 13%;
-}
-
-.titulo-img-container::before{
-    content: "#";
-    font-family: "journal";
-    color: #b9405c;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    font-size: 7.5em;
-    top: 43%;
-    left: 1%;
+    top: 44%;
+    left: 3%;
 }
 
 figure{
@@ -358,4 +346,30 @@ input:focus{
     margin-top:10px;
     margin-bottom:50px;
     justify-content: space-around;
+}
+
+.img-ousada{
+    position: relative;
+    top: -1% !important;
+    left: -2% !important;
+    transform: translateY(19px)  !important;
+    z-index: -1;
+}
+
+.resultado-ousada{
+    height:190px;
+}
+
+.titulo-ousada{
+    top: 52%;
+    left: 4%;
+}
+
+.resultado-estilosa{
+    height:200px;
+}
+
+.titulo-estilosa{
+    top: 52%;
+    left: 8%;
 }
