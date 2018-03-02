@@ -61,24 +61,15 @@ class ResultadoView{
     static monta(resultadoFinal){
         let containerTeste = $(".teste-changes");
         if(resultadoFinal == 0){
-            containerTeste.innerHTML = `
-            <h3>Voce é muito a primeira opção</h3>
-            <a href="http://google.com.br?id=1">Exemplo</a>
-            `;
+            window.location.href = "./resultado.php?resultado=1";
         }
 
         if(resultadoFinal == 1){
-            containerTeste.innerHTML = `
-            <h3>Voce é muito a segunda opção</h3>
-            <a href="http://google.com.br?id=2">Exemplo</a>
-            `;
+            window.location.href = "./resultado.php?resultado=2";
         }
 
         if(resultadoFinal == 2){
-            containerTeste.innerHTML = `
-            <h3>Voce é muito a terceira opção</h3>
-            <a href="http://google.com.br?id=3">Exemplo</a>
-            `;
+            window.location.href = "./resultado.php?resultado=3";
         }
     }
 
