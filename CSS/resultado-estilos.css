@@ -1,5 +1,5 @@
 p{
-    font-family: 'Questrial', sans-serif;
+    font-family: 'gotham light', sans-serif;
     font-weight:100;
 }
 
@@ -139,7 +139,7 @@ p{
     line-height:1.2;
     margin:0 auto;
     font-weight:100;
-    font-family:"gotham thin", sans-serif;
+    font-family:"gotham light", sans-serif;
     text-align:justify;
 }
 
@@ -321,7 +321,8 @@ figcaption a{
     display:inline-block;
     background-color:#db718a;
     color:black;
-    padding:5px;
+    padding: 6px;
+    line-height: 1.2;
     text-transform:uppercase;
     font-family:"gotham bold";
     margin-top:15px;
@@ -372,4 +373,23 @@ input:focus{
 .titulo-estilosa{
     top: 52%;
     left: 8%;
+}
+
+.cadastro-container{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+form h4{
+    font-size: 2.3em;
+    color: black;
+    text-transform: uppercase;
+    font-family:"gotham bold";
+    display:inline-block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
 }

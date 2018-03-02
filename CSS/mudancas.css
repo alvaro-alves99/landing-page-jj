@@ -2,32 +2,32 @@
 
 .li--imagem1--primeira{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/cor-roxa.jpg);
-    background-position:80px !important;
+    background-position:66px !important;
     background-size:175px !important;
 }
 
 .li--imagem2--primeira{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/cor-preta.jpg);
-    background-position:80px !important;
+    background-position:66px !important;
     background-size:175px !important;
 }
 
 .li--imagem3--primeira{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/cor-rosa.jpg);
-    background-position:80px !important;
+    background-position:66px !important;
     background-size:175px !important;
 }
 
 
-.li--imagem1--segunda{
+.li--imagem2--segunda{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/new-york-option.jpg);
 }
 
-.li--imagem2--segunda{
+.li--imagem3--segunda{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/paris-option.jpg);
 }
 
-.li--imagem3--segunda{
+.li--imagem1--segunda{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/london-option.jpg);
 }
 
@@ -35,23 +35,23 @@
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/delineador-option.jpg);
 }
 
-.li--imagem2--terceira{
+.li--imagem3--terceira{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/batom-option.jpg);
 }
 
-.li--imagem3--terceira{
+.li--imagem2--terceira{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/rimel-option.jpg);
 }
 
-.li--imagem1--quarta{
+.li--imagem2--quarta{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/show-option.jpg);
 }
 
-.li--imagem2--quarta{
+.li--imagem3--quarta{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/cinema-option.jpg);
 }
 
-.li--imagem3--quarta{
+.li--imagem1--quarta{
     background-image:url(http://www.jolijoli.com.br/wp-content/uploads/2018/02/balada-option.jpg);
 }
 

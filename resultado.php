@@ -86,14 +86,28 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
                 O kit contém batons, máscara de cílios, iluminador, cílios postiço, blush, contorno, lápis para os olhos, e claro nosso delineador super desejado!
                 Depois desses prêmios, impossível dizer que você não tem a necessaire dos sonhos :P</p>
 
-                <form class="form" action="" method="post">
+
+                <form class="form" action="#" method="post">
+
+                <?php if(!$_POST): ?>
+
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" required>
 
                     <label for="email">E-mail</label>
                     <input type="email" name="email" required>
                     <p>* Fique tranquila(o), não vamos utilizar seus dados pessoais para enviar spam.</p>
-                    <input type="submit" name="enviar">
+                    <input type="submit" name="enviar" value="enviar">
+
+                <?php endif; ?>
+
+                <?php if($_POST): ?>
+                    <div class="cadastro-container">
+                        <h4>Boa sorte!</h4>
+                    </div>
+
+                <?php endif; ?>
+
                 </form>
 
                 <section class="redes-section">
