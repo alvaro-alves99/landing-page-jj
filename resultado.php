@@ -7,14 +7,23 @@
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/estilos.css">
         <link rel="stylesheet" href="CSS/resultado-estilos.css">
-        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Questrial" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
     </head>
     <body>
         <?php
             if($_GET){
             $resultado = $_GET["resultado"];
 
+            $conexao = mysqli_connect("IP", "usuario", "senha", "database");
+
+            if (!$conexao) {
+                echo "Error: Unable to connect to MySQL." . PHP_EOL;
+                echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+                echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+                exit;
+            }
         }
 
 
@@ -101,12 +110,39 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
 
                 <?php endif; ?>
 
-                <?php if($_POST): ?>
-                    <div class="cadastro-container">
-                        <h4>Boa sorte!</h4>
-                    </div>
+                <?php if($_POST):
 
-                <?php endif; ?>
+                    $nome = $_POST['nome'];
+                    $email = $_POST['email'];
+
+                    $confere = mysqli_query($conexao, "SELECT * FROM promomulher WHERE email='{$email}'");
+
+                    $conferido = mysqli_fetch_assoc($confere);
+
+                    if(!$conferido){
+                        mysqli_query($conexao, "INSERT INTO promomulher (nome, email) VALUES ('{$nome}', '{$email}')");
+
+                        ?>
+
+                        <div class="cadastro-container">
+                            <h4>Boa sorte!</h4>
+                        </div>
+
+                        <?php
+
+                    }else{
+                        ?>
+
+                        <div class="cadastro-container">
+                            <h4 style="font-size: 1.4em; width: 100%;">Este e-mail já foi cadastrado</h4>
+                        </div>
+
+                <?php
+                    }
+
+                    endif;
+                    ?>
+
 
                 </form>
 
@@ -119,14 +155,14 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
                         <figure class="batom-figure">
                             <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/batom-landing.png" alt="">
                             <figcaption><h4>Batom Matte Velours</h4><br>027 Vintage Rose<br>
-                            <a href="https://www.topinternacional.com.br/produto/maquiagem/labios/joli-joli/velours-batom-matte-lip/012-coralista/tamanho-unico/47792">Eu quero!</a>
+                            <a href="https://www.topinternacional.com.br/produto/maquiagem/labios/joli-joli/velours-batom-matte-lip/012-coralista/tamanho-unico/47792" target="_blank">Eu quero!</a>
                             </figcaption>
                         </figure>
 
                         <figure class="blush-figure">
                             <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/blush-landingpage.png" alt="">
                             <figcaption><h4>Artiste Blush</h4><br>01 Rose<br>
-                                <a href="https://www.topinternacional.com.br/produto/maquiagem/face/joli-joli/blush-artiste-blush-fard-a-joues/01-rose/tamanho-unico/47838">Eu quero!</a>
+                                <a href="https://www.topinternacional.com.br/produto/maquiagem/face/joli-joli/blush-artiste-blush-fard-a-joues/01-rose/tamanho-unico/47838" target="_blank">Eu quero!</a>
                             </figcaption>
                         </figure>
                     </div>

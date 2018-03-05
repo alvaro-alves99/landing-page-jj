@@ -1,27 +1,5 @@
-@font-face{
-    font-family: "gotham bold";
-    src: url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/gotham-bold.ttf);
-}
-
-@font-face{
-    font-family: "gotham thin";
-    src: url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/gotham-thin.ttf);
-}
-
-@font-face{
-    font-family: "gotham light";
-    src: url(
-http://www.jolijoli.com.br/wp-content/uploads/2018/03/gotham-light.ttf);
-}
-
-
-@font-face{
-    font-family: "beauty";
-    src: url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/beautydemo.ttf);
-}
-
 body{
-    font-family: 'gotham light', sans-serif;
+    font-family: 'Questrial', sans-serif;
     background-color:#000000;
     color:white;
     padding-bottom:1100px;
@@ -85,7 +63,7 @@ body{
     font-size:1.9em;
     text-transform:uppercase;
     margin-bottom:13%;
-    font-family: 'gotham bold', sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-weight:bolder;
     position:relative;
     color:black;
@@ -96,11 +74,11 @@ body{
 
 .texto__inner h1::before{
     content: "";
-    width: 98%;
-    height: 61%;
+    width: 101%;
+    height: 69%;
     position: absolute;
     transform: rotate(3deg);
-    top: 7px;
+    top: 4px;
     left: -9px;
     background-color: white;
     z-index: -3;
@@ -119,19 +97,20 @@ body{
     z-index: -3;
 }
 
-.texto__inner span{
-    font-family: 'beauty', cursive;
-    text-transform:none;
-    font-size: 2em;
+.texto__inner span {
+    font-family: 'Damion', cursive;
+    text-transform: none;
+    font-size: 1.7em;
     font-weight: 100;
     display: inline-block;
     position: relative;
-    top: 15px;
+    top: 5px;
+    right: 5px;
 }
 
-.texto__inner h1 strong{
-    display:inline-block;
-    transform:translate(13px, -1px);
+.texto__inner h1 strong {
+    display: inline-block;
+    transform: translate(12px, 11px);
 }
 
 .texto__inner p{
@@ -141,7 +120,7 @@ body{
     text-align:justify;
     margin:0 auto;
     font-weight:100;
-    font-family: 'gotham light', sans-serif;
+    font-family: 'Questrial', sans-serif;
 }
 
 .texto__inner h2{
@@ -150,7 +129,7 @@ body{
     margin-top:12%;
     line-height:1.21;
     text-transform:uppercase;
-    font-family: 'gotham bold', sans-serif;
+    font-family: 'Questrial', sans-serif;
 }
 
 .teste-container{
@@ -218,7 +197,7 @@ body{
     color:white;
     font-weight: bolder;
     font-size: 2.1em;
-    font-family:"gotham bold";
+    font-family:"Questrial", sans-serif;
 }
 
 .botao-teste{

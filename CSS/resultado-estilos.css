@@ -1,5 +1,5 @@
 p{
-    font-family: 'gotham light', sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-weight:100;
 }
 
@@ -18,7 +18,7 @@ p{
     font-size:2.1rem;
     text-transform:uppercase;
     margin-bottom:13%;
-    font-family: "gotham bold";
+    font-family: 'Questrial', sans-serif;
     font-weight:bolder;
     position:relative;
     color:black;
@@ -78,7 +78,7 @@ p{
 
 .resultado__texto p{
     font-size:1em;
-    font-family: 'gotham light', sans-serif;
+    font-family: 'Questrial', sans-serif;
     line-height:1.2;
 
 }
@@ -98,20 +98,21 @@ p{
 }
 
 .resultado span{
-    font-family:"beauty";
-    text-transform:none;
-    font-size:2em;
-    top:7px;
-    font-weight:100;
-    position:relative;
-    display:inline-block;
+    font-family: 'Damion', cursive;
+    text-transform: none;
+    font-size: 2em;
+    top: 3px;
+    right: 3px;
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
 }
 
 .resultado h3{
     font-size:2em;
     display: inline-block;
     position:absolute;
-    font-family:"beauty";
+    font-family: 'Damion', cursive;
     top:50%;
     left:50%;
     font-weight:100;
@@ -130,7 +131,7 @@ p{
     background-color:white;
     color:black;
     padding:14px 15px;
-    font-family: 'gotham bold', sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-weight:bolder;
 }
 
@@ -139,7 +140,7 @@ p{
     line-height:1.2;
     margin:0 auto;
     font-weight:100;
-    font-family:"gotham light", sans-serif;
+    font-family: 'Questrial', sans-serif;
     text-align:justify;
 }
 
@@ -218,7 +219,7 @@ label{
     display:inline-block;
     margin-top:26px;
     margin-bottom:5px;
-    font-family:"gotham bold";
+    font-family: 'Questrial', sans-serif;
 }
 
 .form p{
@@ -243,7 +244,7 @@ label{
     background-color:white;
     color:black;
     padding:11px 12px;
-    font-family: 'gotham bold', sans-serif;
+    font-family: 'Questrial', sans-serif;
 }
 
 .redes-section h3::after{
@@ -287,7 +288,7 @@ figure{
 }
 
 .batom-figure figcaption{
-    top: -4%;
+    top: -2%;
     left: 3%;
 }
 
@@ -307,12 +308,12 @@ figure{
 
 figcaption h4{
     text-transform:uppercase;
-    font-family:"gotham light";
+    font-family: 'Questrial', sans-serif;
     margin-bottom: -5px;
 }
 
 figcaption{
-    font-family:"gotham thin";
+    font-family: 'Questrial', sans-serif;
     font-size:80%;
 }
 
@@ -324,7 +325,7 @@ figcaption a{
     padding: 6px;
     line-height: 1.2;
     text-transform:uppercase;
-    font-family:"gotham bold";
+    font-family: 'Questrial', sans-serif;
     margin-top:15px;
 }
 
@@ -385,7 +386,7 @@ form h4{
     font-size: 2.3em;
     color: black;
     text-transform: uppercase;
-    font-family:"gotham bold";
+    font-family: 'Questrial', sans-serif;
     display:inline-block;
     position:absolute;
     top:50%;
