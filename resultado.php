@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Concurso Joli Joli - Dia da Mulher</title>
+        <title>Joli Joli | Qual mulher você quer ser?</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/estilos.css">
@@ -14,11 +14,11 @@
 
         <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
         <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="Concurso Joli Joli - Que tipo de mulher você é?" />
+        <meta property="og:title"         content="Joli Joli | Qual mulher você quer ser?" />
         <meta property="og:description"   content="Eu tirei: Ousada. Aposto que você é sonhadora, extremamente alegre e engraçada.
         A gente sabe que você não abre mão do clássico batom nude, e que ama de paixão o efeito corado que um blushzinho causa na pele.
         Tem dias que o menos é mais, e tudo bem ser assim, porque nada é mais incrível do que destacar sua beleza natural." />
-        <meta property="og:image"         content="http://jolijoli.com.br/promo-mulher/resultado.php?resultado=1" />
+        <meta property="og:image"         content="http://www.jolijoli.com.br/wp-content/uploads/2018/03/jolijoli_preto.jpg" />
 
     </head>
     <body>
@@ -36,7 +36,7 @@
             $resultado = $_GET["resultado"];
             $local = $_GET["local"];
 
-            $conexao = mysqli_connect("IP", "user", "senha", "database");
+            $conexao = mysqli_connect("IP", "USER", "SENHA", "DATABASE");
 
             if (!$conexao) {
                 echo "Error: Unable to connect to MySQL." . PHP_EOL;
@@ -50,7 +50,7 @@
          ?>
         <section class="header">
             <div class="header__inner">
-                <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/logo-joli-joli.png" alt="Logo de Joli Joli">
+                <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/jolijoli_preto.jpg" alt="Logo de Joli Joli">
             </div>
         </section>
 
@@ -209,7 +209,7 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
 
                     <h2>Siga-nos</h2>
 
-                    <div class="fb-like" data-href="http://jolijoli.com.br/promo-mulher/resultado.php?resultado=1" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                    <a href="https://www.facebook.com/jolijolimakeupbrasil/" class="facebook-icon" target="_blank">Instagram</a>
 
                     <a href="https://www.instagram.com/jolijolimakeup/" class="instagram-icon" target="_blank">Instagram</a>
 

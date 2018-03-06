@@ -423,7 +423,7 @@ form h4{
     margin:0 auto;
     padding: 12px 10px !important;
     padding-top: 14px !important;
-    margin-bottom:50px;
+    margin-bottom: 20px;
 }
 
 .recomendamos-img{
@@ -435,6 +435,23 @@ form h4{
 .instagram-icon{
     margin-top:30px;
     background-image:url(http://homolog.tfs.com.br/wp-content/uploads/2018/01/instagram-logo-grey.png);
+    background-repeat:no-repeat;
+    background-size:26px;
+    background-position:center;
+    display:inline-block;
+    width:30px;
+    text-indent:-9999px;
+    height:30px;
+    background-color:white;
+    padding:5px;
+    border-radius: 80px;
+    margin-left: 8px;
+}
+
+.facebook-icon{
+    margin-top:30px;
+    background-image:url(http://homolog.tfs.com.br/wp-content/uploads/2018/01/facebook-icon.png);
+    filter:grayscale(1);
     background-repeat:no-repeat;
     background-size:26px;
     background-position:center;
