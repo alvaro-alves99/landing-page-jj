@@ -58,18 +58,18 @@ class TesteView{
 //ESSA CLASSE MOSTRA O RESULTADO DE ACORDO COM O VALOR DE resultadoFinal, QUE É DEFINIDO NA CLASSE Resultado(Model)
 
 class ResultadoView{
-    static monta(resultadoFinal){
+    static monta(resultadoFinal, local=0){
         let containerTeste = $(".teste-changes");
         if(resultadoFinal == 0){
-            window.location.href = "./resultado.php?resultado=1";
+            window.location.href = `./resultado.php?resultado=1&local=${local}`;
         }
 
         if(resultadoFinal == 1){
-            window.location.href = "./resultado.php?resultado=2";
+            window.location.href = `./resultado.php?resultado=2&local=${local}`;
         }
 
         if(resultadoFinal == 2){
-            window.location.href = "./resultado.php?resultado=3";
+            window.location.href = `./resultado.php?resultado=3&local=${local}`;
         }
     }
 

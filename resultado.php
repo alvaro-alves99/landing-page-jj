@@ -2,21 +2,41 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Concurso JJ - Dia da Mulher</title>
+        <title>Concurso Joli Joli - Dia da Mulher</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/estilos.css">
         <link rel="stylesheet" href="CSS/resultado-estilos.css">
+        <link rel="shortcut icon" type="image/jpg" href="http://homolog.tfs.com.br/wp-content/uploads/2017/10/favicon.jpg" />
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Questrial" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+
+        <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Concurso Joli Joli - Que tipo de mulher você é?" />
+        <meta property="og:description"   content="Eu tirei: Ousada. Aposto que você é sonhadora, extremamente alegre e engraçada.
+        A gente sabe que você não abre mão do clássico batom nude, e que ama de paixão o efeito corado que um blushzinho causa na pele.
+        Tem dias que o menos é mais, e tudo bem ser assim, porque nada é mais incrível do que destacar sua beleza natural." />
+        <meta property="og:image"         content="http://jolijoli.com.br/promo-mulher/resultado.php?resultado=1" />
+
     </head>
     <body>
+        <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
         <?php
             if($_GET){
             $resultado = $_GET["resultado"];
+            $local = $_GET["local"];
 
-            $conexao = mysqli_connect("IP", "usuario", "senha", "database");
+            $conexao = mysqli_connect("IP", "user", "senha", "database");
 
             if (!$conexao) {
                 echo "Error: Unable to connect to MySQL." . PHP_EOL;
@@ -41,7 +61,7 @@
                 <?php if($resultado == 3): ?>
 
                 <div class="resultado">
-                    <h1>Resultado<br>Seu <span>Estilo</span> &nbsp;é</h1>
+                    <h1>Resultado<br>Seu <span class="estilo-script">Estilo</span><span class="last-letter">é</span></h1>
                     <img class="modelo-img img-romantica" src="http://www.jolijoli.com.br/wp-content/uploads/2018/02/resultado-romantica.png" alt="">
                 <div class="titulo-img-container">
                     <img class="titulo-img" src="
@@ -59,7 +79,7 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
             <?php if($resultado == 1): ?>
 
                 <div class="resultado">
-                    <h1>Resultado<br>Seu <span>Estilo</span> &nbsp;é</h1>
+                    <h1>Resultado<br>Seu <span class="estilo-script">Estilo</span><span class="last-letter">é</span></h1>
                     <img class="modelo-img img-ousada" src="http://www.jolijoli.com.br/wp-content/uploads/2018/02/resultado-ousada.png" alt="">
                 <div class="titulo-img-container">
                     <img class="titulo-img titulo-ousada" src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/ousada-resultado.png" alt="Romantica escrito">
@@ -74,7 +94,7 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
             <?php if($resultado == 2): ?>
 
                 <div class="resultado">
-                    <h1>Resultado<br>Seu <span>Estilo</span> &nbsp;é</h1>
+                    <h1>Resultado<br>Seu <span class="estilo-script">Estilo</span><span class="last-letter">é</span></h1>
                     <img class="modelo-img img-estilosa" src="http://www.jolijoli.com.br/wp-content/uploads/2018/02/resultado-estilosa.png" alt="">
                 <div class="titulo-img-container">
                     <img class="titulo-img titulo-estilosa" src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/estilosa-resultado.png" alt="Romantica escrito">
@@ -115,12 +135,50 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
                     $nome = $_POST['nome'];
                     $email = $_POST['email'];
 
-                    $confere = mysqli_query($conexao, "SELECT * FROM promomulher WHERE email='{$email}'");
+                    if($local == 0){
+                        $confere = mysqli_query($conexao, "SELECT * FROM promomulher WHERE email='{$email}'");
+                    }
+
+                    if($local == 1){
+                        $confere = mysqli_query($conexao, "SELECT * FROM promo_flavia_gil WHERE email='{$email}'");
+                    }
+
+                    if($local == 2){
+                        $confere = mysqli_query($conexao, "SELECT * FROM promo_marbia WHERE email='{$email}'");
+                    }
+
+                    if($local == 3){
+                        $confere = mysqli_query($conexao, "SELECT * FROM promo_nat_theodoro WHERE email='{$email}'");
+                    }
+
+                    if($local == 4){
+                        $confere = mysqli_query($conexao, "SELECT * FROM promo_tami_halabi WHERE email='{$email}'");
+                    }
 
                     $conferido = mysqli_fetch_assoc($confere);
 
                     if(!$conferido){
-                        mysqli_query($conexao, "INSERT INTO promomulher (nome, email) VALUES ('{$nome}', '{$email}')");
+
+                        if($local == 0){
+                            mysqli_query($conexao, "INSERT INTO promomulher (nome, email) VALUES ('{$nome}', '{$email}')");
+                        }
+
+                        if($local == 1){
+                            mysqli_query($conexao, "INSERT INTO promo_flavia_gil (nome, email) VALUES ('{$nome}', '{$email}')");
+                        }
+
+                        if($local == 2){
+                            mysqli_query($conexao, "INSERT INTO promo_marbia (nome, email) VALUES ('{$nome}', '{$email}')");
+                        }
+
+                        if($local == 3){
+                            mysqli_query($conexao, "INSERT INTO promo_nat_theodoro (nome, email) VALUES ('{$nome}', '{$email}')");
+                        }
+
+                        if($local == 4){
+                            mysqli_query($conexao, "INSERT INTO promo_tami_halabi (nome, email) VALUES ('{$nome}', '{$email}')");
+                        }
+
 
                         ?>
 
@@ -148,6 +206,12 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
 
                 <section class="redes-section">
                     <p>O <strong>resultado</strong> será divulgado no <strong>dia 26 de março</strong> na nossa página do facebook e no instagram.</p>
+
+                    <h2>Siga-nos</h2>
+
+                    <div class="fb-like" data-href="http://jolijoli.com.br/promo-mulher/resultado.php?resultado=1" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+                    <a href="https://www.instagram.com/jolijolimakeup/" class="instagram-icon" target="_blank">Instagram</a>
 
                     <img class="recomendamos-img" src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/recomendamos.png" alt="">
 

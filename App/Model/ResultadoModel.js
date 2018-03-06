@@ -24,11 +24,9 @@ class Resultado{
             var resultadoFinal = 1;
         }
 
-        console.log(resultado0);
-        console.log(resultado1);
-        console.log(resultado2);
 
-        ResultadoView.monta(resultadoFinal);
+
+        ResultadoView.monta(resultadoFinal, blg);
 
     }
 

@@ -76,11 +76,26 @@ p{
     z-index: -1;
 }
 
+.estilo-script{
+    background-image: url(http://www.jolijoli.com.br/wp-content/uploads/2018/03/estilo-script.png);
+    background-repeat: no-repeat;
+    background-position: 1px;
+    background-size: 153px;
+    text-indent: -999px;
+    width: 141px;
+    height: 60px;
+}
+
 .resultado__texto p{
     font-size:1em;
     font-family: 'Questrial', sans-serif;
     line-height:1.2;
 
+}
+
+.last-letter{
+    transform: translatey(-7px);
+    display: inline-block;
 }
 
 .resultado{
@@ -97,12 +112,12 @@ p{
     z-index:-1;
 }
 
-.resultado span{
+.estilo-script{
     font-family: 'Damion', cursive;
     text-transform: none;
     font-size: 2em;
     top: 3px;
-    right: 3px;
+    right: -4px;
     font-weight: 100;
     position: relative;
     display: inline-block;
@@ -392,5 +407,42 @@ form h4{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
+}
 
+.fb-like{
+    display: block !important;
+    width: 40%;
+    margin: 0 auto;
+    transform: translate(2px);
+}
+
+.redes-section h2{
+    font-size:1.5em !important;
+    display:block !important;
+    width:35%;
+    margin:0 auto;
+    padding: 12px 10px !important;
+    padding-top: 14px !important;
+    margin-bottom:50px;
+}
+
+.recomendamos-img{
+    display:block;
+    margin:0 auto;
+    margin-top:43px;
+}
+
+.instagram-icon{
+    margin-top:30px;
+    background-image:url(http://homolog.tfs.com.br/wp-content/uploads/2018/01/instagram-logo-grey.png);
+    background-repeat:no-repeat;
+    background-size:26px;
+    background-position:center;
+    display:inline-block;
+    width:30px;
+    text-indent:-9999px;
+    height:30px;
+    background-color:white;
+    padding:5px;
+    border-radius: 80px;
 }

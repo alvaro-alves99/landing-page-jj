@@ -3,9 +3,22 @@ var $ = document.querySelector.bind(document);
 var resultado = [];
 //ESSA VARIAVEL INDICA QUAL É A PERGUNTA QUE O USUÁRIO ESTA NO MOMENTO, EXEMPLO: 0 => 1 PERGUNTA, 1 => 2 PERGUNTA etc
 var numPergunta = 0;
-
-
 //ESSE CONTROLLER É CRIADO COM O CLICK DO USUARIO EM UMA DAS OPCOES (LI's)
+
+//FUNCAO PARA CAPTURAR PARAMETROS GET
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
+var blg = getUrlParameter('blg');
+
+if(!blg){
+    blg = 0;
+}
+
 class TesteController{
     constructor(escolha){
         this.escolha=escolha;
