@@ -4,6 +4,8 @@ Landing page de uma ação de marketing da marca Joli Joli. O site consiste de u
 
 -Para fazer a app de teste não foi utilizada nenhuma biblioteca/framework, apenas Javascript puro (seguindo o paradigma da orientação a objeto)
 
+-Link para o projeto no ar: http://jolijoli.com.br/promo-mulher/
+
 ## Página de Quiz:
 
 ![alt text](http://homolog.tfs.com.br/wp-content/uploads/2018/03/pagina_teste.jpg)
