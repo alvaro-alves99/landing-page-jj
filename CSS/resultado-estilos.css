@@ -423,43 +423,85 @@ form h4{
     margin:0 auto;
     padding: 12px 10px !important;
     padding-top: 14px !important;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .recomendamos-img{
     display:block;
     margin:0 auto;
-    margin-top:43px;
+    margin-top:63px;
 }
 
 .instagram-icon{
     margin-top:30px;
     background-image:url(http://homolog.tfs.com.br/wp-content/uploads/2018/01/instagram-logo-grey.png);
     background-repeat:no-repeat;
-    background-size:26px;
+    background-size:30px;
     background-position:center;
     display:inline-block;
-    width:30px;
+    width:40px;
     text-indent:-9999px;
-    height:30px;
+    height:40px;
     background-color:white;
     padding:5px;
     border-radius: 80px;
-    margin-left: 8px;
+    margin-left: 11px;
 }
 
 .facebook-icon{
     margin-top:30px;
-    background-image:url(http://homolog.tfs.com.br/wp-content/uploads/2018/01/facebook-icon.png);
+    background-image:url(http://homolog.tfs.com.br/wp-content/uploads/2018/03/facebook-icon-grey.jpg);
     filter:grayscale(1);
     background-repeat:no-repeat;
-    background-size:26px;
+    background-size:33px;
     background-position:center;
     display:inline-block;
-    width:30px;
+    width:40px;
     text-indent:-9999px;
-    height:30px;
+    height:40px;
     background-color:white;
     padding:5px;
     border-radius: 80px;
+    position:relative;
+}
+
+.link_instagram_wrapper{
+    display:inline-block;
+}
+
+.link_instagram_wrapper:hover::after{
+    content:"Siga-nos";
+    background-color:white;
+    left:28px;
+    color:black;
+    font-size: 14px;
+    text-transform:uppercase;
+    position:absolute;
+    transform: translate(90px, 20px);
+    width: 125px;
+    height: 21px;
+    padding: 3px;
+    line-height: 20px;
+    transition:1s;
+}
+
+.fb-share-button:hover::after{
+    content:"Compartilhe";
+    background-color:white;
+    left:28px;
+    color:black;
+    font-size: 14px;
+    text-transform:uppercase;
+    position:absolute;
+    transform: translate(90px, 100px);
+    width: 125px;
+    height: 21px;
+    padding: 3px;
+    line-height: 20px;
+    transition:1s;
+}
+
+.fb-share-button{
+    display: inline-block;
+    transition:1s;
 }

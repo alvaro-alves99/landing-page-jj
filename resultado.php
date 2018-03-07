@@ -15,21 +15,20 @@
         <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
         <meta property="og:type"          content="website" />
         <meta property="og:title"         content="Joli Joli | Qual mulher você quer ser?" />
-        <meta property="og:description"   content="Eu tirei: Ousada. Aposto que você é sonhadora, extremamente alegre e engraçada.
-        A gente sabe que você não abre mão do clássico batom nude, e que ama de paixão o efeito corado que um blushzinho causa na pele.
-        Tem dias que o menos é mais, e tudo bem ser assim, porque nada é mais incrível do que destacar sua beleza natural." />
-        <meta property="og:image"         content="http://www.jolijoli.com.br/wp-content/uploads/2018/03/jolijoli_preto.jpg" />
+        <meta property="og:description"   content="Joli Joli Makeup traz as principais tendências internacionais para as brasileiras, especialmente para as mulheres que não se definem em um único estilo. Afinal de contas, a gente sabe, tem dias que uma make mais básica cai melhor, e outros que um olhão preto deveria ser lei!" />
+        <meta property="og:image"         content="
+        http://homolog.tfs.com.br/wp-content/uploads/2018/03/capa_facebook_compartilhar.jpg" />
 
     </head>
     <body>
         <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+ <script>(function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) return;
+   js = d.createElement(s); js.id = id;
+   js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
 
         <?php
             if($_GET){
@@ -209,9 +208,11 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
 
                     <h2>Siga-nos</h2>
 
-                    <a href="https://www.facebook.com/jolijolimakeupbrasil/" class="facebook-icon" target="_blank">Instagram</a>
+                    <div class="fb-share-button" data-href="http://jolijoli.com.br/promo-mulher/resultado.php?resultado=1&amp;local=0" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="facebook-icon" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjolijoli.com.br%2Fpromo-mulher%2Fresultado.php%3Fresultado%3D1%26local%3D0&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
 
+                    <div class="link_instagram_wrapper">
                     <a href="https://www.instagram.com/jolijolimakeup/" class="instagram-icon" target="_blank">Instagram</a>
+                    </div>
 
                     <img class="recomendamos-img" src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/recomendamos.png" alt="">
 
