@@ -217,19 +217,62 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
                     <img class="recomendamos-img" src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/recomendamos.png" alt="">
 
                     <div class="produtos__redes">
-                        <figure class="batom-figure">
-                            <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/batom-landing.png" alt="">
-                            <figcaption><h4>Batom Matte Velours</h4><br>027 Vintage Rose<br>
-                            <a href="https://www.topinternacional.com.br/produto/maquiagem/labios/joli-joli/velours-batom-matte-lip/012-coralista/tamanho-unico/47792" target="_blank">Eu quero!</a>
+
+                        <?php if($resultado == 1): ?>
+
+                        <figure class="batom-figure ousada-batom">
+                            <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/lm-188_illimitee_mate_liquid_lipcolor_open_front_241_fuchsia_neon.png" alt="">
+                            <figcaption><h4>Batom Líquido Mate</h4><br>241 Fushia Néon<br>
+                            <a href="https://www.topinternacional.com.br/produto/maquiagem/face/joli-joli/illimitee-batom-liquido-matte/217-vieux-rose/tamanho-unico/47804" target="_blank">Eu quero!</a>
                             </figcaption>
                         </figure>
 
-                        <figure class="blush-figure">
-                            <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/blush-landingpage.png" alt="">
-                            <figcaption><h4>Artiste Blush</h4><br>01 Rose<br>
-                                <a href="https://www.topinternacional.com.br/produto/maquiagem/face/joli-joli/blush-artiste-blush-fard-a-joues/01-rose/tamanho-unico/47838" target="_blank">Eu quero!</a>
+                        <figure class="blush-figurde ousada-blush">
+                            <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/pd-k318al_radiance_absolue_illuminateur_de_teint_close_00-glow_me.png" alt="">
+                            <figcaption><h4>Radiance Absolue</h4><br>00 Glow me<br>
+                                <a href="https://www.topinternacional.com.br/produto/maquiagem/face/joli-joli/iluminador-radiance-absolue-illuminateur-de-teint/00-glow-me/tamanho-unico/47837" target="_blank">Eu quero!</a>
                             </figcaption>
                         </figure>
+
+                    <?php endif; ?>
+
+                    <?php if($resultado == 2): ?>
+
+                    <figure class="batom-figure estilosa-batom">
+                        <img src="
+                        http://www.jolijoli.com.br/wp-content/uploads/2018/03/m-z174_magic_in_the_air_eye_mascara_open.png" alt="">
+                        <figcaption><h4>Máscara 5 em 1</h4><br>01 Preto Profundo<br>
+                        <a href="https://www.topinternacional.com.br/produto/maquiagem/olhos/joli-joli/mascara-de-cilios-magic-in-the-air-eye/01-ultra-noir/tamanho-unico/47815" target="_blank">Eu quero!</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="blush-figure estilosa-blush">
+                        <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/ls-120_couture_shiny_lipcreme_front_139_power_red.png" alt="">
+                        <figcaption><h4>Batom cremoso</h4><br>139 Power Red<br>
+                            <a href="https://www.topinternacional.com.br/produto/maquiagem/labios/joli-joli/couture-shiny-batom-hidratante/118-obsession/tamanho-unico/47798" target="_blank">Eu quero!</a>
+                        </figcaption>
+                    </figure>
+
+                <?php endif; ?>
+
+                <?php if($resultado == 3): ?>
+
+                <figure class="batom-figure">
+                    <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/batom-landing.png" alt="">
+                    <figcaption><h4>Batom Matte Velours</h4><br>027 Vintage Rose<br>
+                    <a href="https://www.topinternacional.com.br/produto/maquiagem/labios/joli-joli/velours-batom-matte-lip/012-coralista/tamanho-unico/47792" target="_blank">Eu quero!</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="blush-figure">
+                    <img src="http://www.jolijoli.com.br/wp-content/uploads/2018/03/blush-landingpage.png" alt="">
+                    <figcaption><h4>Artiste Blush</h4><br>01 Rose<br>
+                        <a href="https://www.topinternacional.com.br/produto/maquiagem/face/joli-joli/blush-artiste-blush-fard-a-joues/01-rose/tamanho-unico/47838" target="_blank">Eu quero!</a>
+                    </figcaption>
+                </figure>
+
+            <?php endif; ?>
+
                     </div>
                 </section>
             </section>

@@ -505,3 +505,42 @@ form h4{
     display: inline-block;
     transition:1s;
 }
+
+.estilosa-blush img{
+    position: absolute;
+    top: 20%;
+    width: 75%;
+    left: 36%;
+}
+
+.estilosa-blush figcaption{
+    top:39%;
+}
+
+.estilosa-batom img{
+    width: 40%;
+    margin-top: 140px;
+    position: relative;
+    transform: translate(38px, -72px) scale(1.9);
+}
+
+.estilosa-batom figcaption{
+    top:0%;
+}
+
+.ousada-batom img{
+    width: 62%;
+    position: relative;
+    transform: translate(31px);
+}
+
+.ousada-blush img{
+    position: absolute;
+    top: 33%;
+    width: 85%;
+    left: 32%;
+}
+
+.ousada-blush figcaption{
+    top: 36%;
+}
