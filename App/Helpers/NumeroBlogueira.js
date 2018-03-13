@@ -3,8 +3,6 @@ class Helpers{
         throw new Error ("Classe Helpers nao recebe constructor");
     }
 
-
-
 static NumeroBlogueira(blg){
     let numBlogueira = 0;
 
@@ -22,6 +20,10 @@ static NumeroBlogueira(blg){
 
     if(blg == "tami"){
         numBlogueira = 4;
+    }
+
+    if(blg == "rafa"){
+        numBlogueira = 5;
     }
 
     return numBlogueira;

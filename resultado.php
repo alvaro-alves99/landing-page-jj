@@ -154,6 +154,10 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
                         $confere = mysqli_query($conexao, "SELECT * FROM promo_tami_halabi WHERE email='{$email}'");
                     }
 
+                    if($local == 5){
+                        $confere = mysqli_query($conexao, "SELECT * FROM promo_rafaela WHERE email='{$email}'");
+                    }
+
                     $conferido = mysqli_fetch_assoc($confere);
 
                     if(!$conferido){
@@ -176,6 +180,10 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
 
                         if($local == 4){
                             mysqli_query($conexao, "INSERT INTO promo_tami_halabi (nome, email) VALUES ('{$nome}', '{$email}')");
+                        }
+
+                        if($local == 5){
+                            mysqli_query($conexao, "INSERT INTO promo_rafaela (nome, email) VALUES ('{$nome}', '{$email}')");
                         }
 
 

@@ -542,5 +542,9 @@ form h4{
 }
 
 .ousada-blush figcaption{
-    top: 36%;
+    transform: translate(32px, 235px);
+}
+
+.ousada-blush{
+    position:relative;
 }

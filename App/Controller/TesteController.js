@@ -13,7 +13,7 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-var blg = getUrlParameter('blogueira');
+var blg = getUrlParameter('estilo');
 console.log(blg);
 
 class TesteController{
