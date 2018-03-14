@@ -65,7 +65,7 @@
 
              <div class="text-center">
                  <h1 class="mt-5 font-weight-light">Participantes - <?= $tabela ?></h1>
-                     <h4 class="mb-5 font-weight-light"><span class="badge badge-primary font-weight-light">Total: </span> <?= mysqli_num_rows($query);?></h4>
+                     <h4 class="mb-5 font-weight-light"><span class="badge badge-primary font-weight-light">Total: </span><span style="transform: translate(7px,3px);display:inline-block;"> <?= mysqli_num_rows($query);?></span></h4>
              </div>
 
              <table class="table table-striped">
@@ -74,6 +74,7 @@
                          <th>ID</th>
                          <th>Nome</th>
                          <th>Email</th>
+                         <th>Hora</th>
                      </tr>
                 </thead>
                      <tbody>
@@ -83,6 +84,7 @@
                                  <th><?= $resultado[0]?></th>
                                  <th><?= $resultado[1]?></th>
                                  <th><?= $resultado[2]?></th>
+                                 <th><?= $resultado[3]?></th>
                              </tr>
 
                          <?php endforeach; ?>

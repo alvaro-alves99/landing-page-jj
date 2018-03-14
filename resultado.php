@@ -162,28 +162,30 @@ http://www.jolijoli.com.br/wp-content/uploads/2018/03/resultado-romantica.png" a
 
                     if(!$conferido){
 
+                        $data = date('d-n-y\ G\:i');
+
                         if($local == 0){
-                            mysqli_query($conexao, "INSERT INTO promomulher (nome, email) VALUES ('{$nome}', '{$email}')");
+                            mysqli_query($conexao, "INSERT INTO promomulher (nome, email, hora) VALUES ('{$nome}', '{$email}', '{$data}')");
                         }
 
                         if($local == 1){
-                            mysqli_query($conexao, "INSERT INTO promo_flavia_gil (nome, email) VALUES ('{$nome}', '{$email}')");
+                            mysqli_query($conexao, "INSERT INTO promo_flavia_gil (nome, email, hora) VALUES ('{$nome}', '{$email}', '{$data}')");
                         }
 
                         if($local == 2){
-                            mysqli_query($conexao, "INSERT INTO promo_marbia (nome, email) VALUES ('{$nome}', '{$email}')");
+                            mysqli_query($conexao, "INSERT INTO promo_marbia (nome, email, hora) VALUES ('{$nome}', '{$email}', '{$data}')");
                         }
 
                         if($local == 3){
-                            mysqli_query($conexao, "INSERT INTO promo_nat_theodoro (nome, email) VALUES ('{$nome}', '{$email}')");
+                            mysqli_query($conexao, "INSERT INTO promo_nat_theodoro (nome, email, hora) VALUES ('{$nome}', '{$email}', '{$data}')");
                         }
 
                         if($local == 4){
-                            mysqli_query($conexao, "INSERT INTO promo_tami_halabi (nome, email) VALUES ('{$nome}', '{$email}')");
+                            mysqli_query($conexao, "INSERT INTO promo_tami_halabi (nome, email, hora) VALUES ('{$nome}', '{$email}', '{$data}')");
                         }
 
                         if($local == 5){
-                            mysqli_query($conexao, "INSERT INTO promo_rafaela (nome, email) VALUES ('{$nome}', '{$email}')");
+                            mysqli_query($conexao, "INSERT INTO promo_rafaela (nome, email, hora) VALUES ('{$nome}', '{$email}', '{$data}')");
                         }
 
 
