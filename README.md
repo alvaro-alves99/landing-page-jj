@@ -8,7 +8,7 @@ Landing page de uma ação de marketing da marca Joli Joli. O site consiste de u
 
 ## Página de Quiz:
 
-![alt text](http://homolog.tfs.com.br/wp-content/uploads/2018/03/pagina_teste.jpg)
+![alt text](http://www.jolijoli.com.br/wp-content/uploads/2018/03/pagina_teste-1.jpg)
 
 ## Página de Resultado:
 
